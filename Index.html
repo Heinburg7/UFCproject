@@ -1,0 +1,227 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFC - Últimas Notícias e Eventos</title>
+  <link rel="stylesheet" href="style.css">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   
+   
+</head>
+
+ 
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffffff;
+            color: #ffffff;
+        }
+        h1, h2, h3, h4, h5, .nav-link, .btn-ufc, .badge-ufc {
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .bg-ufc-dark {
+            background-color: #1b1a1a;
+        }
+        .text-ufc-red {
+            color: #d20a0a;
+        }
+        .btn-ufc-red {
+            background-color: #d20a0a;
+            color: rgb(10, 10, 10);
+            border-radius: 0;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .btn-ufc-red:hover {
+            background-color: #b00808;
+            color: rgb(0, 0, 0);
+        }
+        
+        /* Customização das Abas (Tabs) no estilo UFC */
+        .nav-tabs-ufc {
+            border-bottom: 2px solid #000000;
+        }
+        .nav-tabs-ufc .nav-link {
+            color: #000000;
+            border: none;
+            border-radius: 0;
+            font-size: 1.1rem;
+            padding: 12px 25px;
+        }
+        .nav-tabs-ufc .nav-link:hover {
+            color: #f02121;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        .nav-tabs-ufc .nav-link.active {
+            color: #f70b0b;
+            background-color: transparent;
+            border-bottom: 4px solid #d20a0a;
+        }
+
+       
+        .event-card:hover {
+            border-color: #d20a0a;
+        }
+        .badge-ppv {
+            background-color: #d20a0a;
+            color: #0f0f0f;
+            border-radius: 0;
+        
+        }
+        .versus-box {
+            font-family: 'Oswald', sans-serif;
+            background: #000000;
+            padding: 2px 8px;
+            font-weight: bold;
+            color: #d20a0a;
+            display: inline-block;
+        }
+    </style>
+
+<body>
+
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top border-bottom border-secondary">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-danger fs-3" href="" style="font-family: 'Oswald', sans-serif;">UFC</a>
+            <button class="navbar-toggler" type="text" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link active px-3" href="Index.html">Notícias</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="eventos.html">Eventos</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="pass.html"> Fight Pass</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  
+    <header class="position-relative py-5 border-ufc" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.85)), url('/TrabalhoBootstrap/Imagem/image1.jpg') center/cover; min-height: 550px; display: flex; align-items: center;">
+        <div class="container text-white">
+            <div class="row">
+                <div class="col-lg-7">
+                    <span class="badge badge-live mb-3"><i class="bi bi-broadcast"></i> PRÓXIMO SÁBADO</span>
+                    <h1 class="display-3 fw-bold mb-3">DISPUTA DE CINTURÃO NO OCTÓGONO</h1>
+                    <p class="lead mb-4 font-monospace text-light">Dois dos maiores lutadores do planeta se enfrentam na luta principal para unificar o título mundial de MMA.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-ufc-red btn-lg">Como Assistir</a>
+                        <a href="#" class="btn btn-outline-light btn-lg rounded-0">Card Completo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SEÇÃO DE NOTÍCIAS -->
+    <main class="container my-5">
+        <div class="d-flex justify-content-between align-items-end mb-4 border-bottom border-secondary pb-2">
+            <h2 class="m-0 fw-bold">Últimas Notícias</h2>
+            <a href="#" class="text-ufc-red text-decoration-none fw-bold text-uppercase small">Ver tudo <i class="bi bi-chevron-right"></i></a>
+        </div>
+
+        <div class="row g-4">
+            <!-- Notícia 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card card-ufc h-100 text-white shadow">
+                    <img src="/TrabalhoBootstrap/Imagem/imglt2.jpg" class="card-img-top rounded-0" alt="Treino Intenso">
+                    <div class="card-body p-4">
+                        <span class="text-ufc-red fw-bold text-uppercase small" style="font-family: 'Oswald';">Bastidores</span>
+                        <h4 class="card-title my-2">Desafiante foca em preparação mental extrema para disputa de título em Las Vegas</h4>
+                        <p class="card-text text-secondary small">Em entrevista exclusiva, o atleta detalhou sua rotina exaustiva e como planeja anular o jogo de quedas do atual campeão.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 px-4 pb-4 pt-0">
+                        <a href="#" class="text-white text-decoration-none small fw-bold">Ler notícia <i class="bi bi-arrow-right text-ufc-red"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notícia 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card card-ufc h-100 text-white shadow">
+                    <img src="/TrabalhoBootstrap/Imagem/imglt3.jpg" class="card-img-top rounded-0" alt="Pesagem Oficial">
+                    <div class="card-body p-4">
+                        <span class="text-ufc-red fw-bold text-uppercase small" style="font-family: 'Oswald';">Pesagem</span>
+                        <h4 class="card-title my-2">Clima esquenta na encarada oficial antes do card principal deste fim de semana</h4>
+                        <p class="card-text text-secondary small">Lutadores trocaram provocações pesadas e precisaram ser separados pelos seguranças durante o evento oficial.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 px-4 pb-4 pt-0">
+                        <a href="#" class="text-white text-decoration-none small fw-bold">Ler notícia <i class="bi bi-arrow-right text-ufc-red"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notícia 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card card-ufc h-100 text-white shadow">
+                    <img src="/TrabalhoBootstrap/Imagem/matal.jpg" class="card-img-top rounded-0" alt="Atleta Treinando">
+                    <div class="card-body p-4">
+                        <span class="text-ufc-red fw-bold text-uppercase small" style="font-family: 'Oswald';">Análise Técnica</span>
+                        <h4 class="card-title my-2">Especialistas destrincham o jogo de jiu-jitsu que pode definir o card co-principal</h4>
+                        <p class="card-text text-secondary small">Uma análise profunda sobre as transições no chão e finalizações que tornam o combate imprevisível.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 px-4 pb-4 pt-0">
+                        <a href="#" class="text-white text-decoration-none small fw-bold">Ler notícia <i class="bi bi-arrow-right text-ufc-red"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- SEÇÃO "HUMANIZADA" - DESTAQUE DO ATLETA (STORYTELLING) -->
+    <section class="bg-ufc-dark py-5 my-5 border-top border-bottom border-secondary">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5">
+                    <img src="/TrabalhoBootstrap/Imagem/champ.jpg" class="img-fluid border border-secondary shadow-lg rounded-0" alt="Foco do Guerreiro">
+                </div>
+                <div class="col-lg-7">
+                    <span class="text-ufc-red fw-bold text-uppercase tracking-wider" style="font-family: 'Oswald';">A Jornada do Guerreiro</span>
+                    <h2 class="display-5 fw-bold text-white my-3">Da superação ao topo do mundo</h2>
+                    <p class="text-light opacity-75">Por trás dos holofotes e do octógono de metal, existe uma história de sacrifício. Conheça a rotina real de Charles do Bronx</p>
+                    <blockquote class="blockquote border-start border-danger border-4 ps-3 my-4">
+                        <p class="mb-0 text-white italic fw-light">"O octógono não mente. Ele só devolve o que você investiu nos treinos noites adentro."</p>
+                    </blockquote>
+                    <a href="#" class="btn btn-outline-danger text-white rounded-0 mt-2 fw-bold text-uppercase">Assistir Mini-Doc</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (RODAPÉ) -->
+    <footer class="bg-black text-secondary py-5 mt-5 border-top border-secondary">
+        <div class="container text-center text-md-start">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="text-white fw-bold">UFC CLONE</h5>
+                    <p class="small">Desenvolvido com Bootstrap 5 simulando a interface de alta performance e apelo visual da maior organização de artes marciais mistas do mundo.</p>
+                </div>
+                <div class="col-md-4 text-md-center">
+                    <h5 class="text-white fw-bold">Siga o UFC</h5>
+                    <div class="fs-4 d-flex justify-content-md-center gap-3 mt-3">
+                        <a href="#" class="text-secondary hover-white"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-secondary hover-white"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="text-secondary hover-white"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <p class="small m-0">&copy; 2026 UFC Clone Projeto. Todos os direitos reservados.</p>
+                    <p class="x-small text-muted" style="font-size: 0.75rem;">Imagens ilustrativas via Unsplash.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
